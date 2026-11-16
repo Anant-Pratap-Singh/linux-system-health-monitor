@@ -1,34 +1,39 @@
 # Linux System Health Monitor
 
-A Bash-based Linux system monitoring tool that collects essential system health information and generates timestamped text reports.
+A Bash-based Linux system monitoring tool that collects essential system health information and generates timestamped reports for easy monitoring and analysis.
 
 ## Features
 
 - **System Uptime:** Displays how long the system has been running.
-- **CPU Load:** Displays CPU load averages (1, 5, and 15 minutes).
-- **Memory Usage:** Shows total, used, free, and available memory.
-- **Disk Usage:** Displays filesystem storage usage.
-- **Automated Reports:** Generates timestamped `.txt` health reports.
-- **Organized Storage:** Saves generated reports inside the `reports/` directory.
+- **CPU Load Monitoring:** Displays CPU load averages over 1, 5, and 15 minutes.
+- **Memory Monitoring:** Shows total, used, free, and available memory.
+- **Disk Usage Monitoring:** Displays filesystem storage utilization.
+- **Process Monitoring:** Identifies the top 5 CPU-consuming processes.
+- **Automated Reporting:** Generates timestamped system health reports.
+- **Organized Storage:** Saves generated reports in the `reports/` directory.
 
 ## Technologies Used
 
-- Linux (Ubuntu 24.04)
+- Ubuntu Linux 24.04
 - Bash Shell Scripting
+- Linux Command-Line Utilities
 - Windows Subsystem for Linux (WSL 2)
 - Visual Studio Code
-- Linux System Utilities
+- Git and GitHub
 
 ## Project Structure
 
 ```text
 linux-system-health-monitor/
 │
-├── system_monitor.sh
+├── .gitignore
 ├── README.md
+├── system_monitor.sh
 │
-└── reports/
-    └── health_report_TIMESTAMP.txt
+├── reports/
+│   └── .gitkeep
+│
+└── screenshots/
 ```
 
 ## Installation and Execution
@@ -36,7 +41,7 @@ linux-system-health-monitor/
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Anant-Pratap-Singh/linux-system-health-monitor.git
 ```
 
 ### 2. Navigate to the project directory
@@ -60,32 +65,47 @@ chmod +x system_monitor.sh
 ### 5. View the generated report
 
 ```bash
+ls reports/
+```
+
+To view a report:
+
+```bash
 cat reports/health_report_*.txt
 ```
 
-## Sample Output
+## Sample Report Information
 
-The generated report contains:
+The generated report includes:
 
-- Date and hostname
+- Current date and hostname
 - System uptime
 - CPU load averages
 - Memory usage
 - Disk usage
+- Top 5 CPU-consuming processes
 
 ## Learning Outcomes
 
-Through this project, I practised:
+Through this project, I gained practical experience in:
 
 - Linux command-line operations
-- Bash scripting
-- Linux system monitoring
+- Bash shell scripting
+- Linux system resource monitoring
 - File and directory management
 - Automated report generation
+- Version control using Git and GitHub
 - Working with Ubuntu through WSL 2
+
+## Future Enhancements
+
+- Email notifications for critical system conditions
+- CPU and memory usage threshold alerts
+- Automated periodic monitoring
+- Graphical system health reports
 
 ## Author
 
-Anant Pratap Singh
+**Anant Pratap Singh**
 
-Linux System Health Monitor – A practical Linux and Bash scripting project.
+*Linux System Health Monitor – A practical project demonstrating Linux administration and Bash scripting fundamentals.*
