@@ -1,0 +1,9 @@
+# Ignore generated health reports
+reports/*.txt
+
+# Keep reports directory
+!reports/.gitkeep
+
+# Ignore temporary files
+*.log
+*.tmp
