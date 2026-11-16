@@ -109,3 +109,14 @@ Through this project, I gained practical experience in:
 **Anant Pratap Singh**
 
 *Linux System Health Monitor – A practical project demonstrating Linux administration and Bash scripting fundamentals.*
+
+## Project Screenshots
+
+### 1. Script Execution
+![Script Execution](screenshots/script-execution.png)
+
+### 2. Generated Health Report
+![Health Report](screenshots/health-report.png)
+
+### 3. Project Structure
+![Project Structure](screenshots/project-structure.png)
